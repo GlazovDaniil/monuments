@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    padding: 0;
+   }
+p, h1{ 
+    margin: 0 0 16px 0;
+    padding: 0;
+}
+/*-----------------------шапка--------------------------*/
+
+header{
+    display: grid;
+    grid-template-rows: 102px 51px;
+    text-align: center;
+    width: 1440px;
+    height: 153px;
+    background-color: white;
+}
+.UpHeader{
+    display: grid;
+    grid-template-columns: 117px 279px 218px 68px;
+    margin-top: 20px;
+    box-shadow: 0px 1px 0px #140e414d;
+}
+
+.HeaderInfo, .TownAndPhone{margin-top: 20px;}
+
+.HeaderInfo{
+    margin-left: 40px;
+    display: grid;
+    grid-template-columns: 57px 60px;
+    font-family: Segoe UI;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+#info_header { text-decoration: none; color: black; }
+#info_header:hover { color: red; }
+
+.Logo {
+    margin-left: 440px;
+    width: 202px;
+    height: 35px;
+    display: grid;
+    grid-template-columns: 76px 203px;
+}
+.Logo :nth-child(2){
+    margin-top: 15px;
+}
+
+.TownAndPhone{
+    margin-left: 679px;
+    display: grid;
+    grid-template-columns: 98px 120px;
+    font-family: Segoe UI;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.SearchAndCart{
+    margin-left: 718px;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 26px 26px;
+}
+#header_icons > svg{stroke: #000;}
+#header_icons > svg:hover{stroke: brown;}
+
+.DownHeader{
+    margin-left: 15%;
+    margin-right: 15%;
+    display: grid;
+    grid-template-columns: 113px 102px 167px 76px 136px 276px 73px 65px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.DownHeader > p{
+    vertical-align: 20%;
+}
+
+header > p{
+    font-family: Segoe UI;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+
+}
+#now{
+    color: red;
+}
+
+/*-----------------------контент--------------------------*/
+
+.Content{
+    display: grid;
+    grid-template-rows: 1440px;
+    width: 1440px;
+    background-color: rgb(175, 175, 175);
+    margin-top: 10px;
+}
+.TehWork{
+    background-image: url(../img/TehWork.png);
+    background-size: 1440px;
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: auto;
+    text-align: center;
+}
+
+
+/*-----------------------Подвал--------------------------*/
+footer{
+    padding: 0;
+    display: grid;
+    grid-template-rows: 350px 100px;
+    margin: 0;
+    background-color: #140E41;
+    width: 1440px;
+    height: 450px;
+    top: 4823px;
+    border: 1px 0px 0px 0px;
+    color: white;
+}
+
+.UpFooter{
+    display: grid;
+    grid-template-columns: 300px 620px 520px;
+}
+
+footer > div {
+    margin-top: 40px;
+    font: 1em Segoe UI;
+}
+#ico_footer{
+    margin-left: 40px;
+    width: 144px;
+    height: 160px;
+    top: 50px;
+    left: 39px;
+
+}
+.URLs{
+    display: grid;
+    grid-template-columns: 170px 500px;
+    grid-template-rows: 1fr ;
+    margin-left: 50px;
+}
+.URLs > p {
+    font-family: Segoe UI;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+#urls { text-decoration: none; color: white; }
+#urls:hover { color: #ACAAC0; }
+
+.Contacts > h1 {
+    font-family: Segoe UI;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.Contacts > p {
+
+    margin: 30px 0 21px 0;
+    padding: 0;
+    font-family: Segoe UI;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+#picturies{
+    margin-top: 40px;
+}
+#picturies > svg{
+    margin: 10px;
+    fill: white;
+}
+#picturies > svg:hover{
+    fill: #ACAAC0;
+}
+
+.DownFooter{
+    display: grid;
+    grid-template-columns: 260px 600px 500px;
+    color: #726E8D;
+    font-family: Segoe UI;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    border-top: 1px #726E8D;
+    border-top-style: solid;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+.DownFooter > div{
+    margin-top: 15px;
+}
+
+.DownFooterCenter, .DownFooterRight{
+    text-align: right;
+}
+.DownFooterLeft{
+    text-align: left;
+}
+#politic { color: #726E8D; }
+#politic:hover { text-decoration: none;  color: #ACAAC0; }

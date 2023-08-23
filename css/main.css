@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    align-items: center;
    }
 p, h1{ 
     margin: 0 0 16px 0;
@@ -12,20 +13,20 @@ header{
     display: grid;
     grid-template-rows: 102px 51px;
     text-align: center;
-    width: 1440px;
+    width: 100%;
     height: 153px;
     background-color: white;
 }
-.UpHeader{
+.header-up{
     display: grid;
-    grid-template-columns: 117px 279px 218px 68px;
+    grid-template-columns: 40% 33% 18% 8%;
     margin-top: 20px;
     box-shadow: 0px 1px 0px #140e414d;
 }
 
-.HeaderInfo, .TownAndPhone{margin-top: 20px;}
+.header-info, .header-town-phone{margin-top: 20px;}
 
-.HeaderInfo{
+.header-info{
     margin-left: 40px;
     display: grid;
     grid-template-columns: 57px 60px;
@@ -41,19 +42,17 @@ header{
 #info_header { text-decoration: none; color: black; }
 #info_header:hover { color: red; }
 
-.Logo {
-    margin-left: 440px;
+.header-logo {
     width: 202px;
     height: 35px;
     display: grid;
     grid-template-columns: 76px 203px;
 }
-.Logo :nth-child(2){
+.header-logo :nth-child(2){
     margin-top: 15px;
 }
 
-.TownAndPhone{
-    margin-left: 679px;
+.header-town-phone{
     display: grid;
     grid-template-columns: 98px 120px;
     font-family: Segoe UI;
@@ -65,49 +64,54 @@ header{
 
 }
 
-.SearchAndCart{
-    margin-left: 718px;
+.header-search-cart{
     margin-top: 15px;
     display: grid;
-    grid-template-columns: 26px 26px;
+    grid-template-columns: 42px 26px;
 }
 #header_icons > svg{stroke: #000;}
 #header_icons > svg:hover{stroke: brown;}
 
-.DownHeader{
-    margin-left: 15%;
-    margin-right: 15%;
+.header-menu{
+    box-shadow: 0px 6px 15px #140e414d;
+    height: 65px;
+    align-items: center;
+}
+
+.header-menu-nav{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1008px;
     display: grid;
-    grid-template-columns: 113px 102px 167px 76px 136px 276px 73px 65px;
+    grid-template-columns: 12% 10.5% 16% 7.5% 14% 27% 7% 6%;
     text-align: center;
     margin-top: 20px;
 }
 
-.DownHeader > p{
+.header-menu-nav-item {
     vertical-align: 20%;
-}
-
-header > p{
     font-family: Segoe UI;
     font-size: 16px;
     font-weight: 400;
     line-height: 21px;
     letter-spacing: 0em;
     text-align: left;
+    line-height: 1.5;
+    text-decoration: none;
     color: black;
-
+    
 }
+
 #now{
     color: red;
 }
 
 /*-----------------------контент--------------------------*/
 
-.Content{
+.content{
     display: grid;
     grid-template-rows: 1440px;
     width: 1440px;
-    background-color: rgb(175, 175, 175);
     margin-top: 10px;
 }
 .TehWork{
@@ -127,16 +131,15 @@ footer{
     grid-template-rows: 350px 100px;
     margin: 0;
     background-color: #140E41;
-    width: 1440px;
+    width: 100%;
     height: 450px;
-    top: 4823px;
     border: 1px 0px 0px 0px;
     color: white;
 }
 
-.UpFooter{
+.footer-up{
     display: grid;
-    grid-template-columns: 300px 620px 520px;
+    grid-template-columns: 21% 43% 36%;
 }
 
 footer > div {
@@ -151,13 +154,13 @@ footer > div {
     left: 39px;
 
 }
-.URLs{
+.urls{
     display: grid;
     grid-template-columns: 170px 500px;
     grid-template-rows: 1fr ;
     margin-left: 50px;
 }
-.URLs > p {
+.urls > p {
     font-family: Segoe UI;
     font-size: 16px;
     font-weight: 400;
@@ -169,7 +172,7 @@ footer > div {
 #urls { text-decoration: none; color: white; }
 #urls:hover { color: #ACAAC0; }
 
-.Contacts > h1 {
+.contacts > h1 {
     font-family: Segoe UI;
     font-size: 50px;
     font-weight: 400;
@@ -177,7 +180,7 @@ footer > div {
     letter-spacing: 0em;
     text-align: left;
 }
-.Contacts > p {
+.contacts > p {
 
     margin: 30px 0 21px 0;
     padding: 0;
@@ -200,9 +203,9 @@ footer > div {
     fill: #ACAAC0;
 }
 
-.DownFooter{
+.footer-down{
     display: grid;
-    grid-template-columns: 260px 600px 500px;
+    grid-template-columns: 18% 42% 35%;
     color: #726E8D;
     font-family: Segoe UI;
     font-size: 16px;
@@ -215,14 +218,14 @@ footer > div {
     margin-right: 40px;
     margin-left: 40px;
 }
-.DownFooter > div{
+.footer-down > div{
     margin-top: 15px;
 }
 
-.DownFooterCenter, .DownFooterRight{
+.footer-down-center, .footer-down-right{
     text-align: right;
 }
-.DownFooterLeft{
+.footer-down-left{
     text-align: left;
 }
 #politic { color: #726E8D; }

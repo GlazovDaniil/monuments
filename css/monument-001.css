@@ -1,0 +1,10 @@
+@import url(main.css);
+
+content{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-rows: 50px 100px 50px 2545px;
+}

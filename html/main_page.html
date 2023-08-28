@@ -71,26 +71,42 @@
         
         <div class="header-menu">
           <nav class="header-menu-nav">
-            <a href="" class="header-menu-nav-item" id="now"><p>Конструктор</p></a>
-            <a href="monuments-katalog.html" class="header-menu-nav-item"><p>Памятники</p></a>
-            <a href="" class="header-menu-nav-item">
-              <p>Благоустройство 
-                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3 7.5L8 12.5L13 7.5" stroke="#140E41"/>
-                </svg>
-              </p>
-            </a>
-            <a href="" class="header-menu-nav-item"><p>Ограды</p></a>
-            <a href="" class="header-menu-nav-item"><p>Столы и скамьи</p></a>
-            <a href="" class="header-menu-nav-item">
-              <p>Дополнительная комплектация 
-                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3 7.5L8 12.5L13 7.5" stroke="#140E41"/>
-                </svg>
-              </p>
-            </a>
-            <a href="" class="header-menu-nav-item"><p>Кресты</p></a>
-            <a href="" class="header-menu-nav-item"><p>Венки</p></a>
+            <a href="" class="header-menu-nav-item hidden-decorate-a" id="now"><p>Конструктор</p></a>
+            <a href="monuments-katalog.html" class="header-menu-nav-item hidden-decorate-a"><p>Памятники</p></a>
+            <div class="header-menu-nav-item">
+                <form>
+                  <div class="__select select1" data-state="">
+                    <div class="__select__title text-sytle select__title1" data-default="Option 0">Благоустройство</div>
+                    <div class="__select__content ">
+                      <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
+                      <label for="singleSelect0" class="__select__label text-sytle select__label1">Благоустройство</label>
+                      <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                      <label for="singleSelect1" class="__select__label select__label1"><a href="" class="hidden-decorate-a">Твердый</a></label>
+                      <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect"/>
+                      <label for="singleSelect2" class="__select__label select__label1"><a href="" class="hidden-decorate-a">Жидкий</a></label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            <a href="" class="header-menu-nav-item hidden-decorate-a"><p>Ограды</p></a>
+            <a href="" class="header-menu-nav-item hidden-decorate-a"><p>Столы и скамьи</p></a>
+            <div class="header-menu-nav-item">
+                <form>
+                  <div class="__select select2" data-state="">
+                    <div class="__select__title text-sytle select__title2" data-default="Option 0">Дополнительная комплектация</div>
+                    <div class="__select__content ">
+                      <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
+                      <label for="singleSelect0" class="__select__label text-sytle select__label2">Дополнительная комплектация</label>
+                      <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                      <label for="singleSelect1" class="__select__label select__label2"><a href="" class="hidden-decorate-a">Твердый</a></label>
+                      <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect"/>
+                      <label for="singleSelect2" class="__select__label select__label2"><a href="" class="hidden-decorate-a">Жидкий</a></label>
+                    </div>
+                  </div>
+                </form>
+            </div>
+            <a href="" class="header-menu-nav-item hidden-decorate-a"><p>Кресты</p></a>
+            <a href="" class="header-menu-nav-item hidden-decorate-a"><p>Венки</p></a>
           </nav>
         </div>
       </header>
@@ -742,4 +758,16 @@
       </footer>
 
     </body>
+    <script>
+      const selectSingle1 = document.querySelector('.select1');
+      const selectSingle_title1 = selectSingle1.querySelector('.select__title1');
+      const selectSingle_labels1 = selectSingle1.querySelectorAll('.select__label1');
+      selectSingle_title1.addEventListener('click', () => { switch_menu (selectSingle1); clouse_menu(selectSingle1, selectSingle_labels1, selectSingle_title1)});  
+      
+      const selectSingle2 = document.querySelector('.select2');
+      const selectSingle_title2 = selectSingle2.querySelector('.select__title2');
+      const selectSingle_labels2 = selectSingle2.querySelectorAll('.select__label2');
+      selectSingle_title2.addEventListener('click', () => { switch_menu (selectSingle2); clouse_menu(selectSingle2, selectSingle_labels2, selectSingle_title2)});
+
+    </script>
 </html>

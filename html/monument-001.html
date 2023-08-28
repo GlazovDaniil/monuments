@@ -70,26 +70,42 @@
         
         <div class="header-menu">
           <nav class="header-menu-nav">
-            <a href="" class="header-menu-nav-item" id="now"><p>Конструктор</p></a>
-            <a href="" class="header-menu-nav-item"><p>Памятники</p></a>
-            <a href="" class="header-menu-nav-item">
-              <p>Благоустройство 
-                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3 7.5L8 12.5L13 7.5" stroke="#140E41"/>
-                </svg>
-              </p>
-            </a>
-            <a href="" class="header-menu-nav-item"><p>Ограды</p></a>
-            <a href="" class="header-menu-nav-item"><p>Столы и скамьи</p></a>
-            <a href="" class="header-menu-nav-item">
-              <p>Дополнительная комплектация 
-                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3 7.5L8 12.5L13 7.5" stroke="#140E41"/>
-                </svg>
-              </p>
-            </a>
-            <a href="" class="header-menu-nav-item"><p>Кресты</p></a>
-            <a href="" class="header-menu-nav-item"><p>Венки</p></a>
+            <a href="" class="header-menu-nav-item hidden-decorate-a" id="now"><p>Конструктор</p></a>
+            <a href="monuments-katalog.html" class="header-menu-nav-item hidden-decorate-a"><p>Памятники</p></a>
+            <div class="header-menu-nav-item">
+                <form>
+                  <div class="__select select1" data-state="">
+                    <div class="__select__title text-sytle select__title1" data-default="Option 0">Благоустройство</div>
+                    <div class="__select__content ">
+                      <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
+                      <label for="singleSelect0" class="__select__label text-sytle select__label1">Благоустройство</label>
+                      <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                      <label for="singleSelect1" class="__select__label select__label1"><a href="" class="hidden-decorate-a">Твердый</a></label>
+                      <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect"/>
+                      <label for="singleSelect2" class="__select__label select__label1"><a href="" class="hidden-decorate-a">Жидкий</a></label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            <a href="" class="header-menu-nav-item hidden-decorate-a"><p>Ограды</p></a>
+            <a href="" class="header-menu-nav-item hidden-decorate-a"><p>Столы и скамьи</p></a>
+            <div class="header-menu-nav-item">
+                <form>
+                  <div class="__select select2" data-state="">
+                    <div class="__select__title text-sytle select__title2" data-default="Option 0">Дополнительная комплектация</div>
+                    <div class="__select__content ">
+                      <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
+                      <label for="singleSelect0" class="__select__label text-sytle select__label2">Дополнительная комплектация</label>
+                      <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                      <label for="singleSelect1" class="__select__label select__label2"><a href="" class="hidden-decorate-a">Твердый</a></label>
+                      <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect"/>
+                      <label for="singleSelect2" class="__select__label select__label2"><a href="" class="hidden-decorate-a">Жидкий</a></label>
+                    </div>
+                  </div>
+                </form>
+            </div>
+            <a href="" class="header-menu-nav-item hidden-decorate-a"><p>Кресты</p></a>
+            <a href="" class="header-menu-nav-item hidden-decorate-a"><p>Венки</p></a>
           </nav>
         </div>
       </header>
@@ -98,6 +114,279 @@
 
         <div class="content-location text-syle">
           <p><a class="nav-link" href="main_page.html">Главная / </a><a class="nav-link" href="monuments-katalog.html">Памятники / </a> Форма №32. Гранит</p>
+        </div>
+
+        <div class="content-product_card">
+
+          <div class="content-product_card-imgs">
+            
+            <img class="main_img" src="../img/memorial-1.jpg">
+            
+            <div class="product_card-list_imgs">
+              <img src="../img/memorial-1.jpg">
+              <img src="../img/memorial-1.jpg">
+            </div>
+
+          </div>
+
+          <div class="content-product_card-info">
+
+            <div class="content-product_card-info-header">
+              <h1>Форма №32. Гранит</h1>
+              <h2>42 650 ₽</h2>
+            </div>
+
+            <form class="content-product_card-info-form">
+
+              <div class="btn-container text-style">
+                <p>Материал</p>
+                <i class="fa fa-sun-o" aria-hidden="true"></i>
+                  <label class="switch btn-color-mode-switch">
+                        <input type="checkbox" name="color_mode" id="color_mode" value="1">
+                        <label for="color_mode" data-on="Гранит" data-off="Мрамор" class="btn-color-mode-switch-inner"></label>
+                    </label>
+                  <i class="fa fa-moon-o" aria-hidden="true"></i>
+              </div>
+
+              
+
+              <div class="form-parametrs text-style">
+                <label for="courses">Полировка</label>
+                <label for="courses">Размер стелы, см</label>
+                <select id="courses" name="student_courses">
+                    <option hidden>Выберите тип полировки</option>
+                    <option value="first">Первый</option>
+                    <option value="secondg">Второй</option>
+                </select>
+
+                
+                <select id="courses" name="student_courses">
+                    <option hidden>Выберите размер</option>
+                    <option value="first">Первый</option>
+                    <option value="secondg">Второй</option>
+                </select>
+              </div>
+              
+              <div class="form-input text-style">
+                <input type="checkbox" id="law" value="interest_law" name="user_interest">
+                <label class="light" for="law">Нужна полировка цветника внутри</label>
+              </div>
+
+              <button class="form-buttom text-style" type="submit">Оставить заявку</button>
+
+              <div class="form-dopinfo">
+                
+                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle opacity="0.5" cx="22" cy="22" r="21.5" stroke="#ACAAC0"/>
+                  <g clip-path="url(#clip0_1_1136)">
+                  <path d="M34.6675 13.6866C36.3385 14.2244 38.7343 15.6352 37.6573 18.664C37.0538 20.3609 34.8817 24.9675 33.5652 27.7454C31.5612 31.9742 25.0699 46.3017 22.1953 52.9974" stroke="#ACAAC0"/>
+                  <path d="M15.8943 11.4045C15.0004 12.871 4.34673 36.0828 0.642455 43.4796C0.366349 44.8857 12.8554 50.2393 19.1345 52.7403C23.8398 42.6013 32.5907 24.0685 34.4526 20.001C35.5309 17.6452 37.4326 14.6253 34.9741 13.7902C32.5156 12.9552 31.2206 12.5329 27.2377 11.3165C24.1377 10.3697 21.7234 9.54362 19.9431 9.20231C17.6674 8.76602 16.453 10.4879 15.8943 11.4045Z" stroke="#ACAAC0"/>
+                  <path d="M18.9751 29.9135C17.817 28.8179 17.1326 27.451 16.7567 25.6856C16.3617 23.8305 15.6776 20.0452 18.9754 18.9459C20.2164 18.5323 20.4383 19.1613 20.5867 20.0972C20.7568 21.1688 20.68 22.9356 19.3728 22.5669C18.6745 22.8589 19.0022 23.8118 19.6016 25.8081C20.201 27.8045 20.4037 28.0445 21.0059 27.9043C21.0059 27.615 21.6012 27.0964 22.098 27.5202C23.3446 28.5835 24.7284 29.8291 22.9313 30.5624C21.7846 31.0303 20.1479 31.023 18.9751 29.9135Z" fill="#ACAAC0"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_1_1136">
+                  <rect width="44" height="44" rx="22" fill="white"/>
+                  </clipPath>
+                  </defs>
+                </svg>
+
+                <p class="text-style">Или можете сделать заказ по телефону +7 (4942) 30-31-32</p>
+              </div>
+
+            </form>
+
+            <div class="content-product_card-constructor">
+
+              <svg width="59" height="86" viewBox="0 0 59 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.5" clip-path="url(#clip0_1_1146)">
+                <path d="M1.79109 64.3753C1.38018 96.7031 7.40675 109.517 7.54372 110.193H52.3493C56.7322 101.872 57.2629 73.4379 57.2629 66.4043C57.2629 59.3706 57.2629 60.7232 55.3454 45.168C53.8113 32.7238 56.8977 19.3328 58.6326 14.1928L54.1126 12.4344L57.2629 6.21234C55.391 4.67936 48.5518 1.31582 36.1699 0.125512C23.788 -1.0648 11.2875 3.68743 6.58492 6.21234C5.12394 14.8241 2.11981 38.5131 1.79109 64.3753Z" stroke="white"/>
+                <path d="M54.1251 12.4194C49.2708 22.8209 47.1915 42.3064 56.8996 59.2262" stroke="white"/>
+                <path d="M37.0038 39.0815C37.0038 42.5376 36.0564 45.6443 34.5507 47.8727C33.0431 50.1039 31.0134 51.41 28.8359 51.41C26.6584 51.41 24.6286 50.1039 23.121 47.8727C21.6154 45.6443 20.668 42.5376 20.668 39.0815C20.668 35.6253 21.6154 32.5186 23.121 30.2902C24.6286 28.059 26.6584 26.7529 28.8359 26.7529C31.0134 26.7529 33.0431 28.059 34.5507 30.2902C36.0564 32.5186 37.0038 35.6253 37.0038 39.0815Z" stroke="white"/>
+                <path d="M11.1528 65.7785C11.8463 65.7785 12.5397 65.4318 12.5397 64.3916V69.2456" stroke="white"/>
+                <path d="M21.5547 68.8986C22.5948 68.8986 23.9834 68.8121 23.9834 66.1744M23.9834 66.1744C23.9834 63.7474 21.5579 64.0941 21.5564 65.8276C21.5547 67.8587 23.9834 67.778 23.9834 66.1744Z" stroke="white"/>
+                <path d="M14.2737 68.8986C15.3138 68.8986 16.7024 68.8121 16.7024 66.1744M16.7024 66.1744C16.7024 63.7474 14.2769 64.0941 14.2754 65.8276C14.2737 67.8587 16.7024 67.778 16.7024 66.1744Z" stroke="white"/>
+                <path d="M19.8215 69.2456C19.8215 69.2456 19.8215 65.2367 19.8215 64.3916C19.4748 65.7785 18.0879 67.8588 17.7412 67.8588C18.7814 67.8588 20.5149 67.8588 20.5149 67.8588" stroke="white" stroke-linejoin="bevel"/>
+                <path d="M26.4092 67.1655H30.2231" stroke="white" stroke-linejoin="bevel"/>
+                <path d="M43.5879 65.7785C44.2813 65.7785 44.9748 65.4318 44.9748 64.3916V69.2456" stroke="white"/>
+                <path d="M38.4998 66.7146C38.4998 67.9976 38.1704 69.0376 37.1823 69.0376C36.1941 69.0376 35.8647 67.9976 35.8647 66.7146C35.8647 65.4316 36.1941 64.3916 37.1823 64.3916C38.1704 64.3916 38.4998 65.4316 38.4998 66.7146Z" stroke="white"/>
+                <path d="M39.6799 66.1251C39.6799 65.0994 40.7035 64.0739 41.7271 64.7575C42.7507 65.4411 42.4093 67.8587 41.0225 67.512C39.6357 67.1653 39.6798 68.557 39.6798 68.8989L42.4094 68.8989" stroke="white" stroke-linejoin="bevel"/>
+                <path d="M31.9567 66.1251C31.9567 65.0994 32.9803 64.0739 34.004 64.7575C35.0276 65.4411 34.6861 67.8587 33.2994 67.512C31.9126 67.1653 31.9567 68.557 31.9567 68.8989L34.6863 68.8989" stroke="white" stroke-linejoin="bevel"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1_1146">
+                <rect width="59" height="86" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+                
+              <p class="text-style">В коснструкторе вы можете самостоятельно оформить памятник</p>
+              
+              <button class="content-product_card-constructor-button text-style">Конструктор памятника</button>
+
+            </div >
+
+            <div class="content-product_card-description text-style">
+              <h2>Описание заказа</h2>
+              <div class="content-product_card-description-item">
+                <p>Материал</p>
+                <p>Гранит</p>
+              </div>
+              <div class="content-product_card-description-item">
+                <p>Размер стелы</p>
+                <p>100×50×7</p>
+              </div>
+              <div class="content-product_card-description-item">
+                <p>Размер постамента</p>
+                <p>60×20×12</p>
+              </div>
+              <div class="content-product_card-description-item">
+                <p>Размер цветника</p>
+                <p>100×8×6</p>
+              </div>
+              <div class="content-product_card-description-item">
+                <p>Полировка</p>
+                <p>Односторонняя</p>
+              </div>
+              <div class="content-product_card-description-item">
+                <p>Колличество персон</p>
+                <p>На одного</p>
+              </div>
+              <div class="content-product_card-description-item">
+                <p>Форма памятника</p>
+                <p>Резная</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="content-offers">
+          <h3 class="text-style">С этим также заказывают</h3>
+          <div class="content-monuments">
+
+            <div class="content-monuments-item" >
+              <div id="content-monuments-item">
+                <img class="content-monuments-item-img"  src="../img/memorial-1.jpg">
+                <div class="content-monuments-item-info">
+                  <div class="content-monuments-item-info-main">
+                    <p class="text-style">Форма №5. Гранит</p>
+                    <h4 class="text-style">17 454 ₽</h4>
+                  </div>
+                  <a href="monument-001.html"><button class="content-monuments-item-info-button text-syle">Подробнее</button></a>
+                  <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-monuments-item" >
+              <div id="content-monuments-item">
+                <img class="content-monuments-item-img"  src="../img/memorial-1.jpg">
+                <div class="content-monuments-item-info">
+                  <div class="content-monuments-item-info-main">
+                    <p class="text-style">Форма №5. Гранит</p>
+                    <h4 class="text-style">17 454 ₽</h4>
+                  </div>
+                  <a href="monument-001.html"><button class="content-monuments-item-info-button text-syle">Подробнее</button></a>
+                  <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-monuments-item" >
+              <div id="content-monuments-item">
+                <img class="content-monuments-item-img"  src="../img/memorial-1.jpg">
+                <div class="content-monuments-item-info">
+                  <div class="content-monuments-item-info-main">
+                    <p class="text-style">Форма №5. Гранит</p>
+                    <h4 class="text-style">17 454 ₽</h4>
+                  </div>
+                  <a href="monument-001.html"><button class="content-monuments-item-info-button text-syle">Подробнее</button></a>
+                  <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-monuments-item" >
+              <div id="content-monuments-item">
+                <img class="content-monuments-item-img"  src="../img/memorial-1.jpg">
+                <div class="content-monuments-item-info">
+                  <div class="content-monuments-item-info-main">
+                    <p class="text-style">Форма №5. Гранит</p>
+                    <h4 class="text-style">17 454 ₽</h4>
+                  </div>
+                  <a href="monument-001.html"><button class="content-monuments-item-info-button text-syle">Подробнее</button></a>
+                  <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="content-offers">
+          <h3 class="text-style">Другие памятники</h3>
+          <div class="content-monuments">
+
+            <div class="content-monuments-item" >
+              <div id="content-monuments-item">
+                <img class="content-monuments-item-img"  src="../img/memorial-1.jpg">
+                <div class="content-monuments-item-info">
+                  <div class="content-monuments-item-info-main">
+                    <p class="text-style">Форма №5. Гранит</p>
+                    <h4 class="text-style">17 454 ₽</h4>
+                  </div>
+                  <a href="monument-001.html"><button class="content-monuments-item-info-button text-syle">Подробнее</button></a>
+                  <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-monuments-item" >
+              <div id="content-monuments-item">
+                <img class="content-monuments-item-img"  src="../img/memorial-1.jpg">
+                <div class="content-monuments-item-info">
+                  <div class="content-monuments-item-info-main">
+                    <p class="text-style">Форма №5. Гранит</p>
+                    <h4 class="text-style">17 454 ₽</h4>
+                  </div>
+                  <a href="monument-001.html"><button class="content-monuments-item-info-button text-syle">Подробнее</button></a>
+                  <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-monuments-item" >
+              <div id="content-monuments-item">
+                <img class="content-monuments-item-img"  src="../img/memorial-1.jpg">
+                <div class="content-monuments-item-info">
+                  <div class="content-monuments-item-info-main">
+                    <p class="text-style">Форма №5. Гранит</p>
+                    <h4 class="text-style">17 454 ₽</h4>
+                  </div>
+                  <a href="monument-001.html"><button class="content-monuments-item-info-button text-syle">Подробнее</button></a>
+                  <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-monuments-item" >
+              <div id="content-monuments-item">
+                <img class="content-monuments-item-img"  src="../img/memorial-1.jpg">
+                <div class="content-monuments-item-info">
+                  <div class="content-monuments-item-info-main">
+                    <p class="text-style">Форма №5. Гранит</p>
+                    <h4 class="text-style">17 454 ₽</h4>
+                  </div>
+                  <a href="monument-001.html"><button class="content-monuments-item-info-button text-syle">Подробнее</button></a>
+                  <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
         </div>
 
       </content>
@@ -203,4 +492,20 @@
       </footer>
 
     </body>
+    <script>
+      const selectSingle1 = document.querySelector('.select1');
+      const selectSingle_title1 = selectSingle1.querySelector('.select__title1');
+      const selectSingle_labels1 = selectSingle1.querySelectorAll('.select__label1');
+      selectSingle_title1.addEventListener('click', () => { switch_menu (selectSingle1); clouse_menu(selectSingle1, selectSingle_labels1, selectSingle_title1)});  
+      
+      const selectSingle2 = document.querySelector('.select2');
+      const selectSingle_title2 = selectSingle2.querySelector('.select__title2');
+      const selectSingle_labels2 = selectSingle2.querySelectorAll('.select__label2');
+      selectSingle_title2.addEventListener('click', () => { switch_menu (selectSingle2); clouse_menu(selectSingle2, selectSingle_labels2, selectSingle_title2)});
+      
+
+      
+
+
+    </script>
 </html>

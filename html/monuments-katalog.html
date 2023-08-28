@@ -70,26 +70,42 @@
         
         <div class="header-menu">
           <nav class="header-menu-nav">
-            <a href="" class="header-menu-nav-item"><p>Конструктор</p></a>
-            <a href="" class="header-menu-nav-item" id="now"><p>Памятники</p></a>
-            <a href="" class="header-menu-nav-item">
-              <p>Благоустройство 
-                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3 7.5L8 12.5L13 7.5" stroke="#140E41"/>
-                </svg>
-              </p>
-            </a>
-            <a href="" class="header-menu-nav-item"><p>Ограды</p></a>
-            <a href="" class="header-menu-nav-item"><p>Столы и скамьи</p></a>
-            <a href="" class="header-menu-nav-item">
-              <p>Дополнительная комплектация 
-                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3 7.5L8 12.5L13 7.5" stroke="#140E41"/>
-                </svg>
-              </p>
-            </a>
-            <a href="" class="header-menu-nav-item"><p>Кресты</p></a>
-            <a href="" class="header-menu-nav-item"><p>Венки</p></a>
+            <a href="" class="header-menu-nav-item hidden-decorate-a" id="now"><p>Конструктор</p></a>
+            <a href="" class="header-menu-nav-item hidden-decorate-a"><p>Памятники</p></a>
+            <div class="header-menu-nav-item">
+                <form>
+                  <div class="__select select1" data-state="">
+                    <div class="__select__title text-sytle select__title1" data-default="Option 0">Благоустройство</div>
+                    <div class="__select__content ">
+                      <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
+                      <label for="singleSelect0" class="__select__label text-sytle select__label1">Благоустройство</label>
+                      <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                      <label for="singleSelect1" class="__select__label select__label1"><a href="" class="hidden-decorate-a">Твердый</a></label>
+                      <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect"/>
+                      <label for="singleSelect2" class="__select__label select__label1"><a href="" class="hidden-decorate-a">Жидкий</a></label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            <a href="" class="header-menu-nav-item hidden-decorate-a"><p>Ограды</p></a>
+            <a href="" class="header-menu-nav-item hidden-decorate-a"><p>Столы и скамьи</p></a>
+            <div class="header-menu-nav-item">
+                <form>
+                  <div class="__select select2" data-state="">
+                    <div class="__select__title text-sytle select__title2" data-default="Option 0">Дополнительная комплектация</div>
+                    <div class="__select__content ">
+                      <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
+                      <label for="singleSelect0" class="__select__label text-sytle select__label2">Дополнительная комплектация</label>
+                      <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                      <label for="singleSelect1" class="__select__label select__label2"><a href="" class="hidden-decorate-a">Твердый</a></label>
+                      <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect"/>
+                      <label for="singleSelect2" class="__select__label select__label2"><a href="" class="hidden-decorate-a">Жидкий</a></label>
+                    </div>
+                  </div>
+                </form>
+            </div>
+            <a href="" class="header-menu-nav-item hidden-decorate-a"><p>Кресты</p></a>
+            <a href="" class="header-menu-nav-item hidden-decorate-a"><p>Венки</p></a>
           </nav>
         </div>
       </header>
@@ -105,31 +121,31 @@
           <div class="content-info-filters">
             
             <form>
-              <div class="__select select1" data-state="">
-                <div class="__select__title text-sytle select__title1" data-default="Option 0">Вид камня</div>
+              <div class="__select select6" data-state="">
+                <div class="__select__title text-sytle select__title6" data-default="Option 0">Вид камня</div>
                 <div class="__select__content ">
                   <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
-                  <label for="singleSelect0" class="__select__label text-sytle select__label1">Вид камня</label>
+                  <label for="singleSelect0" class="__select__label text-sytle select__label6">Вид камня</label>
                   <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
-                  <label for="singleSelect1" class="__select__label select__label1">Твердый</label>
+                  <label for="singleSelect1" class="__select__label select__label6">Твердый</label>
                   <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect"/>
-                  <label for="singleSelect2" class="__select__label select__label1">Жидкий</label>
+                  <label for="singleSelect2" class="__select__label select__label6">Жидкий</label>
                 </div>
               </div>
             </form>
 
             <form>
-              <div class="__select select2" data-state="">
-                <div class="__select__title text-sytle select__title2" data-default="Option 0">Форма памятника</div>
+              <div class="__select select7" data-state="">
+                <div class="__select__title text-sytle select__title7" data-default="Option 0">Форма памятника</div>
                 <div class="__select__content ">
                   <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
-                  <label for="singleSelect0" class="__select__label text-sytle select__label2">Форма памятника</label>
+                  <label for="singleSelect0" class="__select__label text-sytle select__label7">Форма памятника</label>
                   <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
-                  <label for="singleSelect1" class="__select__label select__label2">Треугольный</label>
+                  <label for="singleSelect1" class="__select__label select__label7">Треугольный</label>
                   <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect"/>
-                  <label for="singleSelect2" class="__select__label select__label2">Круглый</label>
+                  <label for="singleSelect2" class="__select__label select__label7">Круглый</label>
                   <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
-                  <label for="singleSelect3" class="__select__label select__label2">Алюминий</label>
+                  <label for="singleSelect3" class="__select__label select__label7">Алюминий</label>
                 </div>
               </div>
             </form>
@@ -161,7 +177,7 @@
                   <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect"/>
                   <label for="singleSelect2" class="__select__label select__label4">чуть меньше</label>
                   <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
-                  <label for="singleSelect3" class="__select__label select__label4">ваще жесть как мало</label>
+                  <label for="singleSelect3" class="__select__label select__label4">жесть мало</label>
                 </div>
               </div>
             </form>
@@ -198,7 +214,7 @@
                   <p class="text-style">Форма №5. Гранит</p>
                   <h4 class="text-style">17 454 ₽</h4>
                 </div>
-                <button class="content-monuments-item-info-button text-syle">Подробнее</button>
+                <a href="monument-001.html"><button class="content-monuments-item-info-button text-syle">Подробнее</button></a>
                 <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
               </div>
             </div>
@@ -210,7 +226,7 @@
               <div class="content-monuments-item-info">
                 <div class="content-monuments-item-info-main">
                   <p class="text-style">Форма №21. Гранит</p>
-                  <h4 class="text-stytle sell">22 927 ₽ <s class="old-price text-style">38 812 ₽</s></h4>
+                  <h4 class="text-style sell">22 927 ₽ <s class="old-price text-style">38 812 ₽</s></h4>
                 </div>
                 <button class="content-monuments-item-info-button text-syle">Подробнее</button>
                 <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
@@ -613,7 +629,15 @@
     const selectSingle_labels5 = selectSingle5.querySelectorAll('.select__label5');
     selectSingle_title5.addEventListener('click', () => { switch_menu (selectSingle5); clouse_menu(selectSingle5, selectSingle_labels5, selectSingle_title5)});
 
-    
+    const selectSingle6 = document.querySelector('.select6');
+    const selectSingle_title6 = selectSingle6.querySelector('.select__title6');
+    const selectSingle_labels6 = selectSingle6.querySelectorAll('.select__label6');
+    selectSingle_title6.addEventListener('click', () => { switch_menu (selectSingle6); clouse_menu(selectSingle6, selectSingle_labels6, selectSingle_title6)});
+
+    const selectSingle7 = document.querySelector('.select7');
+    const selectSingle_title7 = selectSingle7.querySelector('.select__title7');
+    const selectSingle_labels7 = selectSingle7.querySelectorAll('.select__label7');
+    selectSingle_title7.addEventListener('click', () => { switch_menu (selectSingle7); clouse_menu(selectSingle7, selectSingle_labels7, selectSingle_title7)});
     
     </script>
 

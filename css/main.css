@@ -106,7 +106,7 @@ header{
     width: 1008px;
     height: 45px;
     display: grid;
-    grid-template-columns: 12% 10.5% 16% 7.5% 14% 27% 7% 6%;
+    grid-template-columns: 12% 10.5% 17% 7.5% 14% 28% 7% 6%;
 }
 
 .header-menu-nav :hover{    
@@ -124,12 +124,16 @@ header{
     line-height: 21px;
     letter-spacing: 0em;
     line-height: 1.5;
+}
+.hidden-decorate-a{
+    color: black;  
     text-decoration: none;
-    color: black;
-    
 }
 .header-menu-nav-item > p{
     margin-top: 10px;
+}
+.header-menu-nav-item > form{
+    margin-top: 2px;
 }
 
 #now{
@@ -314,7 +318,13 @@ footer > div {
     position: absolute;
     top: 40px;
     left: 3px;
-  
+    font-family: Segoe UI;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+
     display: flex;
     flex-direction: column;
     width: calc(100% - 6px);

@@ -1,4 +1,5 @@
 @import url(main.css);
+@import url(catalog_monuments.css);
 
 content{
     margin-top: 50px;
@@ -6,5 +7,365 @@ content{
     margin-left: auto;
     margin-right: auto;
     display: grid;
-    grid-template-rows: 50px 100px 50px 2545px;
+    grid-template-rows: 50px 1200px 660px 700px;
 }
+
+.content-product_card{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1360px;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 800px 560px;
+
+}
+.content-product_card-imgs{
+    display: grid;
+    grid-template-rows: 680px 70px;
+}
+.main_img{
+    border-radius: 4px;
+    width: 670px;
+    height: 670px;
+}
+.product_card-list_imgs{
+    display: flex;
+    justify-content: flex-start;
+}
+.product_card-list_imgs > img{
+    width: 70px;
+    height: 70px;
+    margin-right: 5px;
+    border-radius: 4px;
+}
+
+
+.content-product_card-info{
+    display: grid;
+    grid-template-rows: 120px 390px 120px 342px;
+}
+.content-product_card-info-header > h1,
+.content-product_card-info-header > h2{
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.content-product_card-info-header > h1{
+    font-family: Playfair Display;
+    font-size: 46px;
+    line-height: 46px;
+    margin-block-end: 0;
+}
+.content-product_card-info-header > h2{
+    font-family: Segoe UI;
+    font-size: 34px;
+    line-height: 41px;
+    margin-block-start: 0.4em;
+}
+
+.content-product_card-info-form{
+    display: grid;
+    grid-template-rows: 100px 80px 40px 100px 50px;
+    background-color: #f4f4f4;
+    border-radius: 6px;
+}
+.form-parametrs{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+.form-parametrs :nth-child(1),
+.form-parametrs :nth-child(2){
+    margin-bottom: 5px;
+    margin-top: auto;
+    
+}
+.form-parametrs :nth-child(1),
+.form-parametrs :nth-child(2),
+.form-parametrs :nth-child(3),
+.form-parametrs :nth-child(4){
+    margin-left: 20px;
+    
+}
+.form-parametrs :nth-child(3),
+.form-parametrs :nth-child(4){
+    border-radius: 6px;
+    border: 1px solid #ACAAC0;
+    color: #ACAAC0;
+    
+}
+.form-parametrs :nth-child(4){
+    margin-right: 20px;;
+    
+}
+
+
+.form-input{
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+}
+.form-input > input{
+    width: 22px;
+    height: 22px;
+}
+.form-input > label{
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.form-buttom{
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 511px;
+    height: 50px;
+    background-color: #140E41;
+    border-radius: 6px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+
+}
+
+.form-dopinfo{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 50px 431px;
+}
+.form-dopinfo > p{
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #726E8D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+
+}
+
+
+.content-product_card-constructor{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 555px;
+    height: 97px;
+    color: white;
+    background-color: #C83936;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 90px 200px 255px;
+}
+
+.content-product_card-constructor > svg{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.content-product_card-constructor > p{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+
+}
+
+.content-product_card-constructor-button{
+    
+    margin: auto;
+    width: 235px;
+    height: 50px;
+    background-color: #C83936;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #fff;
+    text-align: center;
+
+}
+
+.content-product_card-description{
+    margin-top: 20px;
+}
+.content-product_card-description > h2{
+    font-family: Playfair Display;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-weight: lighter;
+}
+.content-product_card-description-item{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-bottom: 1px solid #726E8D;
+}
+.content-product_card-description-item :nth-child(1){
+    text-align: left;
+    color: #726E8D;
+}
+.content-product_card-description-item :nth-child(2){
+    text-align: right;
+}
+.content-product_card-description-item >p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;    
+}
+
+
+.content-offers{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    display: grid;
+    grid-template-rows: 70px 460px;
+
+}
+.content-offers > h3{
+    margin-left: 20px;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 35px;
+
+}
+
+.content-monuments{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1360px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*switch styles*/
+
+div.btn-container{
+    display: table-cell;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+div.btn-container > p{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.btn-color-mode-switch{
+    display: inline-block;
+    margin: 0px;
+    position: relative;
+}
+
+.btn-color-mode-switch > label.btn-color-mode-switch-inner{
+    margin: 0px;
+    width: 511px;
+    height: 50px;
+    background: none;
+    border-radius: 6px;
+    border: 1px solid #ACAAC0;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+    /*box-shadow: 0px 0px 8px 0px rgba(17, 17, 17, 0.34) inset;*/
+    display: block;
+
+}
+
+.btn-color-mode-switch > label.btn-color-mode-switch-inner:before{
+    content: attr(data-on);
+    position: absolute;
+    font-size: 12px;
+    font-weight: 500;
+    top: 7px;
+    right: 20px;
+    line-height: 90px;
+    font-family: Segoe UI;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.btn-color-mode-switch > label.btn-color-mode-switch-inner:after{
+    content: attr(data-off);
+    width: 246.5px;
+    height: 42px;
+    background: #140E41;
+    border-radius: 4px;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    text-align: center;
+    transition: all 0.3s ease;
+    padding: 10px, 16px, 11px, 16px;
+    color: white;
+    font-family: Segoe UI;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    
+}
+
+.btn-color-mode-switch input[type="checkbox"]{
+    cursor: pointer;
+    width: 50px;
+    height: 25px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    margin: 0px;
+}
+
+
+.btn-color-mode-switch input[type="checkbox"]:checked + 
+label.btn-color-mode-switch-inner:after{
+    content: attr(data-on);
+    left: 260px;
+    background: #140E41;
+}
+
+.btn-color-mode-switch input[type="checkbox"]:checked + 
+label.btn-color-mode-switch-inner:before{
+    content: attr(data-off);
+    right: auto;
+    left: 20px;
+}
+
+
+
+
+

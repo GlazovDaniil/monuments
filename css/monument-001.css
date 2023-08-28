@@ -296,8 +296,8 @@ div.btn-container > p{
     overflow: hidden;
     position: relative;
     transition: all 0.3s ease;
-    /*box-shadow: 0px 0px 8px 0px rgba(17, 17, 17, 0.34) inset;*/
     display: block;
+    text-align: center;
 
 }
 
@@ -307,38 +307,37 @@ div.btn-container > p{
     font-size: 12px;
     font-weight: 500;
     top: 7px;
-    right: 20px;
+    right: 100px;
     line-height: 90px;
-    font-family: Segoe UI;
+    margin-top: 6px;
     font-size: 16px;
     font-weight: 400;
     line-height: 21px;
-    letter-spacing: 0em;
     text-align: center;
+
 }
 
 .btn-color-mode-switch > label.btn-color-mode-switch-inner:after{
     content: attr(data-off);
     width: 246.5px;
-    height: 42px;
+    height: 35px;
     background: #140E41;
     border-radius: 4px;
     position: absolute;
     left: 4px;
     top: 4px;
-    text-align: center;
     transition: all 0.3s ease;
-    padding: 10px, 16px, 11px, 16px;
+
     color: white;
-    font-family: Segoe UI;
     font-size: 16px;
     font-weight: 400;
     line-height: 21px;
-    letter-spacing: 0em;
     text-align: center;
-    
+    padding-top: 8px;
 }
-
+label.btn-color-mode-switch-inner:after >:nth-child(1){
+    margin-top: 10px;
+}
 .btn-color-mode-switch input[type="checkbox"]{
     cursor: pointer;
     width: 50px;
@@ -356,13 +355,17 @@ label.btn-color-mode-switch-inner:after{
     content: attr(data-on);
     left: 260px;
     background: #140E41;
+    text-align: center;
 }
 
 .btn-color-mode-switch input[type="checkbox"]:checked + 
 label.btn-color-mode-switch-inner:before{
     content: attr(data-off);
     right: auto;
-    left: 20px;
+    margin-left: 80px;
+    left: 10px;
+    margin-top: 6px;
+    text-align: center;
 }
 
 

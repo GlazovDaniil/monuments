@@ -2,7 +2,7 @@
 
 content{
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
     margin-left: auto;
     margin-right: auto;
     display: grid;
@@ -23,10 +23,59 @@ content{
 
 }
 
+/*-----------------------фильтры--------------------------*/
 
+.content-info{
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 1360px;
+    height: 37px;
+    display: grid;
+    grid-template-columns: 622px 200px 538px;
+}
+
+.content-info-filters{
+    display: grid;
+    grid-template-columns: 127px 183px 200px 88px;
+}
+
+
+.content-info-filters :hover{
+    background: #ACAAC01A;
+}
+
+.seldiv {
+    width: Hug (127px);
+    height: Hug (37px);
+    padding: 8px 12px 8px 12px;
+    border-radius: 4px;
+    border: none;
+    gap: 10px;
+    background-color: white;
+  }
+
+.content-info-count_found{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    color: #726E8D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+
+}
+.content-info-right_filter{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 400px;
+}
+
+/*-----------------------карточки таваров--------------------------*/
 
 
 .content-monuments{
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     width: 1360px;
@@ -42,44 +91,62 @@ content{
         position: relative;
     }
 
-    .content-monuments-item{
+    #content-monuments-item{
         width: 365px;
         height: 633px;
-        margin-left: -20px;
-        margin-top: -20px;     
-        background-color: #ACAAC0;
+        margin-top: -20px;    
+        background-color: white; 
         border: 1px solid #140E4124;
+        border-radius: 14px;
+        box-shadow: 0px 4px 10px 0px #140E4114;
         position: absolute;
-        z-index: 10;
+        z-index: 1;
     };
     
     .content-monuments-item-info-button,
-    .content-monuments-item-info-dop,
-    .content-monuments-item-shadows{
+    .content-monuments-item-info-dop{
         visibility: visible;
     };
 
 }
 
-
-
-
-.content-monuments-item{
+.content-monuments-item-advertisement{
+    margin: 20px 20px 0 20px;
+    background-color: #C83936;
     width: 325px;
     height: 461px;
-    border-radius: 20px;
-    display: grid;
-    grid-template-rows: 410px 34%;
-    background: white;
+    border-radius: 6px;
+    color: #fff;
+}
+.content-monuments-item-advertisement > p{
+    margin-top: 40px;
+    margin-left: 40px;
+    font-family: Playfair Display;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: left;
+
 
 }
-
+.content-monuments-item-advertisement > h3{
+    margin-top: 40px;
+    margin-left: 40px;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 35px;
+}
+.content-monuments-item-advertisement :nth-child(3){
+    margin-top: 160px;
+    margin-right: 40px;
+}
 
 .content-monuments-item-img{
+    margin-left: 20px;
     height: 392px;
     width: 325px;
     margin-top: 20px;
-    margin-left: auto;
     margin-right: auto;
     border-radius: 6px;
 }
@@ -102,6 +169,31 @@ content{
     line-height: 30px;
     margin-block-start: 0;
 
+}
+.sell{
+    color: #C83936;
+}
+.old-price{ 
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #726E8D;
+    position: relative;
+    white-space:pre;
+	display:inline-block;
+    text-decoration: none;
+
+}
+.old-price:after {
+    content:"";
+    display: block;
+	border-bottom: 1px solid #726E8D;
+	position: absolute;
+	top: 0;
+	left: 0;    
+	width: 64px;
+	height: 50%;
+    transform:rotate(-10deg);
 }
 .content-monuments-item-info-button{
     width: 324px;

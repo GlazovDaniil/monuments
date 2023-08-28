@@ -4,9 +4,8 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="description" content=".">
-        <title>Главная страница</title>
+        <title>Памятники</title>
         <link href="../css/monuments-katalog.css" rel="stylesheet" type="text/css">
-        
         
     </head>
     <body>
@@ -102,67 +101,364 @@
 
         <div class="content-heading"><h1>Памятники</h1></div>
 
-        <div></div>
+        <div class="content-info">
+          <div class="content-info-filters">
+            
+            <form>
+              <div class="__select select1" data-state="">
+                <div class="__select__title text-sytle select__title1" data-default="Option 0">Вид камня</div>
+                <div class="__select__content ">
+                  <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
+                  <label for="singleSelect0" class="__select__label text-sytle select__label1">Вид камня</label>
+                  <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                  <label for="singleSelect1" class="__select__label select__label1">Твердый</label>
+                  <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect"/>
+                  <label for="singleSelect2" class="__select__label select__label1">Жидкий</label>
+                </div>
+              </div>
+            </form>
+
+            <form>
+              <div class="__select select2" data-state="">
+                <div class="__select__title text-sytle select__title2" data-default="Option 0">Форма памятника</div>
+                <div class="__select__content ">
+                  <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
+                  <label for="singleSelect0" class="__select__label text-sytle select__label2">Форма памятника</label>
+                  <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                  <label for="singleSelect1" class="__select__label select__label2">Треугольный</label>
+                  <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect"/>
+                  <label for="singleSelect2" class="__select__label select__label2">Круглый</label>
+                  <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                  <label for="singleSelect3" class="__select__label select__label2">Алюминий</label>
+                </div>
+              </div>
+            </form>
+
+            <form>
+              <div class="__select select3" data-state="">
+                <div class="__select__title text-sytle select__title3" data-default="Option 0">Колличество персон</div>
+                <div class="__select__content ">
+                  <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
+                  <label for="singleSelect0" class="__select__label text-sytle select__label3">Колличество персон</label>
+                  <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                  <label for="singleSelect1" class="__select__label select__label3">Одинарный</label>
+                  <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect"/>
+                  <label for="singleSelect2" class="__select__label select__label3">На две персоны</label>
+                  <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                  <label for="singleSelect3" class="__select__label select__label3">На три персоны</label>
+                </div>
+              </div>
+            </form>
+
+            <form>
+              <div class="__select select4" data-state="">
+                <div class="__select__title text-sytle select__title4" data-default="Option 0">Цена</div>
+                <div class="__select__content ">
+                  <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
+                  <label for="singleSelect0" class="__select__label text-sytle select__label4">Цена</label>
+                  <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                  <label for="singleSelect1" class="__select__label select__label4">многа</label>
+                  <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect"/>
+                  <label for="singleSelect2" class="__select__label select__label4">чуть меньше</label>
+                  <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                  <label for="singleSelect3" class="__select__label select__label4">ваще жесть как мало</label>
+                </div>
+              </div>
+            </form>
+
+          </div>
+
+          <label class="text-style content-info-count_found" color="#726E8D" size="16px">Найдено 63 товара</label>
+
+          <form class="content-info-right_filter">
+            <div class="__select select5" data-state="">
+              <div class="__select__title text-sytle select__title5" data-default="Option 0">Популярное</div>
+              <div class="__select__content ">
+                <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
+                <label for="singleSelect0" class="__select__label text-sytle select__label5">Популярное</label>
+                <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect1" class="__select__label select__label5">По цене</label>
+                <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect"/>
+                <label for="singleSelect2" class="__select__label select__label5">По отзывам</label>
+                <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect3" class="__select__label select__label5">Популярное</label>
+              </div>
+            </div>
+          </form>
+
+        </div>
 
         <div class="content-monuments">
 
-          <div class="content-monuments-item content-monuments-item-shadows">
-            <img class="content-monuments-item-img" src="../img/memorial-1.jpg">
-            <div class="content-monuments-item-info">
-              <div class="content-monuments-item-info-main">
-                <p class="text-syle">Форма №11. Гранит</p>
-                <h4 class="text-syle">9 450 ₽</h4>
+          <div class="content-monuments-item" >
+            <div id="content-monuments-item">
+              <img class="content-monuments-item-img"  src="../img/memorial-1.jpg">
+              <div class="content-monuments-item-info">
+                <div class="content-monuments-item-info-main">
+                  <p class="text-style">Форма №5. Гранит</p>
+                  <h4 class="text-style">17 454 ₽</h4>
+                </div>
+                <button class="content-monuments-item-info-button text-syle">Подробнее</button>
+                <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
               </div>
-              <button class="content-monuments-item-info-button text-syle">Подробнее</button>
-              <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
             </div>
           </div>
 
-          <div class="content-monuments-item ">
-            <img class="content-monuments-item-img" src="../img/memorial-1.jpg">
-            <div class="content-monuments-item-info">
-              <div class="content-monuments-item-info-main">
-                <p class="text-syle">Форма №11. Гранит</p>
-                <h4 class="text-syle">9 450 ₽</h4>
+          <div class="content-monuments-item" >
+            <div id="content-monuments-item">
+              <img class="content-monuments-item-img"  src="../img/memorial-1.jpg">
+              <div class="content-monuments-item-info">
+                <div class="content-monuments-item-info-main">
+                  <p class="text-style">Форма №21. Гранит</p>
+                  <h4 class="text-stytle sell">22 927 ₽ <s class="old-price text-style">38 812 ₽</s></h4>
+                </div>
+                <button class="content-monuments-item-info-button text-syle">Подробнее</button>
+                <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
               </div>
-              <button class="content-monuments-item-info-button text-syle">Подробнее</button>
-              <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
             </div>
           </div>
 
-          <div class="content-monuments-item ">
-            <img class="content-monuments-item-img" src="../img/memorial-1.jpg">
-            <div class="content-monuments-item-info">
-              <div class="content-monuments-item-info-main">
-                <p class="text-syle">Форма №11. Гранит</p>
-                <h4 class="text-syle">9 450 ₽</h4>
+          <div class="content-monuments-item" >
+            <div id="content-monuments-item">
+              <img class="content-monuments-item-img"  src="../img/memorial-1.jpg">
+              <div class="content-monuments-item-info">
+                <div class="content-monuments-item-info-main">
+                  <p class="text-style">Форма №9. Гранит</p>
+                  <h4 class="text-style">85 254 ₽</h4>
+                </div>
+                <button class="content-monuments-item-info-button text-style">Подробнее</button>
+                <p class="content-monuments-item-info-dop text-style">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
               </div>
-              <button class="content-monuments-item-info-button text-syle">Подробнее</button>
-              <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
             </div>
           </div>
 
-          <div class="content-monuments-item ">
-            <img class="content-monuments-item-img" src="../img/memorial-1.jpg">
-            <div class="content-monuments-item-info">
-              <div class="content-monuments-item-info-main">
-                <p class="text-syle">Форма №11. Гранит</p>
-                <h4 class="text-syle">9 450 ₽</h4>
+          <div class="content-monuments-item-advertisement" >
+            <p>Скидка 20% на памятники</p>
+            <h3 class="text-style">до 30 августа</h3>
+            <h3 class="text-style">+ персональный подарок на выбор</h3>
+          </div>
+
+          <div class="content-monuments-item" >
+            <div id="content-monuments-item">
+              <img class="content-monuments-item-img"  src="../img/memorial-1.jpg">
+              <div class="content-monuments-item-info">
+                <div class="content-monuments-item-info-main">
+                  <p class="text-style">Форма №12. Гранит</p>
+                  <h4 class="text-style">37 436 ₽</h4>
+                </div>
+                <button class="content-monuments-item-info-button text-syle">Подробнее</button>
+                <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
               </div>
-              <button class="content-monuments-item-info-button text-syle">Подробнее</button>
-              <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
             </div>
           </div>
 
-          <div class="content-monuments-item ">
-            <img class="content-monuments-item-img" src="../img/memorial-1.jpg">
-            <div class="content-monuments-item-info">
-              <div class="content-monuments-item-info-main">
-                <p class="text-syle">Форма №11. Гранит</p>
-                <h4 class="text-syle">9 450 ₽</h4>
+          <div class="content-monuments-item" >
+            <div id="content-monuments-item">
+              <img class="content-monuments-item-img"  src="../img/memorial-1.jpg">
+              <div class="content-monuments-item-info">
+                <div class="content-monuments-item-info-main">
+                  <p class="text-style">Форма №19. Гранит</p>
+                  <h4 class="text-style">62 923 ₽</h4>
+                </div>
+                <button class="content-monuments-item-info-button text-syle">Подробнее</button>
+                <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
               </div>
-              <button class="content-monuments-item-info-button text-syle">Подробнее</button>
-              <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
+            </div>
+          </div>
+
+          <div class="content-monuments-item" >
+            <div id="content-monuments-item">
+              <img class="content-monuments-item-img"  src="../img/memorial-1.jpg">
+              <div class="content-monuments-item-info">
+                <div class="content-monuments-item-info-main">
+                  <p class="text-style">Форма №11. Гранит</p>
+                  <h4 class="text-style">9 450 ₽</h4>
+                </div>
+                <button class="content-monuments-item-info-button text-syle">Подробнее</button>
+                <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-monuments-item" >
+            <div id="content-monuments-item">
+              <img class="content-monuments-item-img"  src="../img/memorial-1.jpg">
+              <div class="content-monuments-item-info">
+                <div class="content-monuments-item-info-main">
+                  <p class="text-style">Форма №18. Гранит</p>
+                  <h4 class="text-style">24 264 ₽</h4>
+                </div>
+                <button class="content-monuments-item-info-button text-syle">Подробнее</button>
+                <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-monuments-item" >
+            <div id="content-monuments-item">
+              <img class="content-monuments-item-img"  src="../img/memorial-1.jpg">
+              <div class="content-monuments-item-info">
+                <div class="content-monuments-item-info-main">
+                  <p class="text-style">Форма №23. Гранит</p>
+                  <h4 class="text-style">81 040 ₽</h4>
+                </div>
+                <button class="content-monuments-item-info-button text-syle">Подробнее</button>
+                <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-monuments-item" >
+            <div id="content-monuments-item">
+              <img class="content-monuments-item-img"  src="../img/memorial-1.jpg">
+              <div class="content-monuments-item-info">
+                <div class="content-monuments-item-info-main">
+                  <p class="text-style">Форма №4. Гранит</p>
+                  <h4 class="text-style">53 674 ₽</h4>
+                </div>
+                <button class="content-monuments-item-info-button text-syle">Подробнее</button>
+                <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-monuments-item" >
+            <div id="content-monuments-item">
+              <img class="content-monuments-item-img"  src="../img/memorial-1.jpg">
+              <div class="content-monuments-item-info">
+                <div class="content-monuments-item-info-main">
+                  <p class="text-style">Форма №23. Гранит</p>
+                  <h4 class="text-style">81 040 ₽</h4>
+                </div>
+                <button class="content-monuments-item-info-button text-syle">Подробнее</button>
+                <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-monuments-item" >
+            <div id="content-monuments-item">
+              <img class="content-monuments-item-img"  src="../img/memorial-1.jpg">
+              <div class="content-monuments-item-info">
+                <div class="content-monuments-item-info-main">
+                  <p class="text-style">Форма №2. Гранит</p>
+                  <h4 class="text-style">79 563 ₽</h4>
+                </div>
+                <button class="content-monuments-item-info-button text-syle">Подробнее</button>
+                <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-monuments-item" >
+            <div id="content-monuments-item">
+              <img class="content-monuments-item-img"  src="../img/memorial-1.jpg">
+              <div class="content-monuments-item-info">
+                <div class="content-monuments-item-info-main">
+                  <p class="text-style">Форма №9. Гранит</p>
+                  <h4 class="text-style">23 647 ₽</h4>
+                </div>
+                <button class="content-monuments-item-info-button text-syle">Подробнее</button>
+                <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-monuments-item" >
+            <div id="content-monuments-item">
+              <img class="content-monuments-item-img"  src="../img/memorial-1.jpg">
+              <div class="content-monuments-item-info">
+                <div class="content-monuments-item-info-main">
+                  <p class="text-style">Форма №6. Гранит</p>
+                  <h4 class="text-style">36 500 ₽</h4>
+                </div>
+                <button class="content-monuments-item-info-button text-syle">Подробнее</button>
+                <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-monuments-item" >
+            <div id="content-monuments-item">
+              <img class="content-monuments-item-img"  src="../img/memorial-1.jpg">
+              <div class="content-monuments-item-info">
+                <div class="content-monuments-item-info-main">
+                  <p class="text-style">Форма №33. Гранит</p>
+                  <h4 class="text-style">120 932 ₽</h4>
+                </div>
+                <button class="content-monuments-item-info-button text-syle">Подробнее</button>
+                <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-monuments-item" >
+            <div id="content-monuments-item">
+              <img class="content-monuments-item-img"  src="../img/memorial-1.jpg">
+              <div class="content-monuments-item-info">
+                <div class="content-monuments-item-info-main">
+                  <p class="text-style">Форма №34. Гранит</p>
+                  <h4 class="text-style">233 563 ₽</h4>
+                </div>
+                <button class="content-monuments-item-info-button text-syle">Подробнее</button>
+                <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-monuments-item" >
+            <div id="content-monuments-item">
+              <img class="content-monuments-item-img"  src="../img/memorial-1.jpg">
+              <div class="content-monuments-item-info">
+                <div class="content-monuments-item-info-main">
+                  <p class="text-style">Форма №2. Гранит</p>
+                  <h4 class="text-style">79 563 ₽</h4>
+                </div>
+                <button class="content-monuments-item-info-button text-syle">Подробнее</button>
+                <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-monuments-item" >
+            <div id="content-monuments-item">
+              <img class="content-monuments-item-img"  src="../img/memorial-1.jpg">
+              <div class="content-monuments-item-info">
+                <div class="content-monuments-item-info-main">
+                  <p class="text-style">Форма №19. Гранит</p>
+                  <h4 class="text-style">62 923 ₽</h4>
+                </div>
+                <button class="content-monuments-item-info-button text-syle">Подробнее</button>
+                <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-monuments-item" >
+            <div id="content-monuments-item">
+              <img class="content-monuments-item-img"  src="../img/memorial-1.jpg">
+              <div class="content-monuments-item-info">
+                <div class="content-monuments-item-info-main">
+                  <p class="text-style">Форма №4. Гранит</p>
+                  <h4 class="text-style">53 674 ₽</h4>
+                </div>
+                <button class="content-monuments-item-info-button text-syle">Подробнее</button>
+                <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-monuments-item" >
+            <div id="content-monuments-item">
+              <img class="content-monuments-item-img"  src="../img/memorial-1.jpg">
+              <div class="content-monuments-item-info">
+                <div class="content-monuments-item-info-main">
+                  <p class="text-style">Форма №7. Гранит</p>
+                  <h4 class="text-style">44 537 ₽</h4>
+                </div>
+                <button class="content-monuments-item-info-button text-syle">Подробнее</button>
+                <p class="content-monuments-item-info-dop text-syle">2 стелы 100х50х7, постамент, цветник, 1 ст.полировка; цена вазы</p>
+              </div>
             </div>
           </div>
 
@@ -273,4 +569,52 @@
       </footer>
 
     </body>
+    <script>
+      // Переключать меню 
+      function  switch_menu (selectSingle){
+        if ('active' === selectSingle.getAttribute('data-state')) {
+        selectSingle.setAttribute('data-state', '');
+        } else {
+        selectSingle.setAttribute('data-state', 'active');
+      }
+    }
+    function clouse_menu (selectSingle ,selectSingle_labels, selectSingle_title){
+      // Закрыть при нажатии на опцию
+      for (let i = 0; i < selectSingle_labels.length; i++) {
+        selectSingle_labels[i].addEventListener('click', (evt) => {
+          selectSingle_title.textContent = evt.target.textContent;
+          selectSingle.setAttribute('data-state', '');
+        });
+      }
+    }
+
+    const selectSingle1 = document.querySelector('.select1');
+    const selectSingle_title1 = selectSingle1.querySelector('.select__title1');
+    const selectSingle_labels1 = selectSingle1.querySelectorAll('.select__label1');
+    selectSingle_title1.addEventListener('click', () => { switch_menu (selectSingle1); clouse_menu(selectSingle1, selectSingle_labels1, selectSingle_title1)});  
+    
+    const selectSingle2 = document.querySelector('.select2');
+    const selectSingle_title2 = selectSingle2.querySelector('.select__title2');
+    const selectSingle_labels2 = selectSingle2.querySelectorAll('.select__label2');
+    selectSingle_title2.addEventListener('click', () => { switch_menu (selectSingle2); clouse_menu(selectSingle2, selectSingle_labels2, selectSingle_title2)});
+
+    const selectSingle3 = document.querySelector('.select3');
+    const selectSingle_title3 = selectSingle3.querySelector('.select__title3');
+    const selectSingle_labels3 = selectSingle3.querySelectorAll('.select__label3');
+    selectSingle_title3.addEventListener('click', () => { switch_menu (selectSingle3); clouse_menu(selectSingle3, selectSingle_labels3, selectSingle_title3)});
+
+    const selectSingle4 = document.querySelector('.select4');
+    const selectSingle_title4 = selectSingle4.querySelector('.select__title4');
+    const selectSingle_labels4 = selectSingle4.querySelectorAll('.select__label4');
+    selectSingle_title4.addEventListener('click', () => { switch_menu (selectSingle4); clouse_menu(selectSingle4, selectSingle_labels4, selectSingle_title4)});
+
+    const selectSingle5 = document.querySelector('.select5');
+    const selectSingle_title5 = selectSingle5.querySelector('.select__title5');
+    const selectSingle_labels5 = selectSingle5.querySelectorAll('.select__label5');
+    selectSingle_title5.addEventListener('click', () => { switch_menu (selectSingle5); clouse_menu(selectSingle5, selectSingle_labels5, selectSingle_title5)});
+
+    
+    
+    </script>
+
 </html>

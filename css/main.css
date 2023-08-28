@@ -9,7 +9,7 @@ p, h1{
 }
 
 
-.text-syle{
+.text-style{
     font-family: Segoe UI;
     letter-spacing: 0em;
     text-align: left;
@@ -243,3 +243,119 @@ footer > div {
 }
 #politic { color: #726E8D; }
 #politic:hover { text-decoration: none;  color: #ACAAC0; }
+
+/*-----------------------выпадающие списки--------------------------*/
+
+.__select {
+    position: relative;
+    
+    margin: 0 auto;
+  
+    &[data-state="active"] {
+      .__select__title {
+        &::before {
+          transform: translate(-3px, -50%) rotate(-45deg);
+        }
+  
+        &::after {
+          transform: translate(3px, -50%) rotate(45deg);
+        }
+      }
+      
+      .__select__content {
+        opacity: 1;
+      }
+      
+      .__select__label + .__select__input + .__select__label {
+        max-height: 40px;
+        border-top-width: 1px;
+      }
+    }
+    &:hover{
+        background-color: none;
+    }
+  }
+  .__select__title {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    font-family: Segoe UI;
+    letter-spacing: 0em;
+    text-align: left;
+    border-radius: 5px;
+    
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: "";
+      
+      position: absolute;
+      top: 50%;
+      right: 16px;
+  
+      display: block;
+      width: 10px;
+      height: 2px;
+  
+      transition: all 0.3s ease-out;
+  
+      background-color: black;
+  
+      transform: translate(-3px, -50%) rotate(45deg);
+    }
+    &::after {
+      transform: translate(3px, -50%) rotate(-45deg);
+    }
+    
+  }
+  
+  .__select__content {
+    position: absolute;
+    top: 40px;
+    left: 3px;
+  
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 6px);
+  
+    background-color: white;
+  
+    border-radius: 4px;
+    
+    transition: all 0.3s ease-out;
+  
+    opacity: 0;
+    z-index: 8;
+  }
+  .__select__input {
+    display: none;
+  
+    &:checked + label {
+      background-color: white;
+    }
+    &:disabled + label {
+      opacity: 0.6;
+      pointer-events: none;
+    }
+  }
+  .__select__label {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    max-height: 0;
+    padding: 0 16px;
+    
+    transition: all 0.2s ease-out;
+  
+    cursor: pointer;
+    
+    overflow: hidden;
+    background-color: white;
+  
+    &:hover {
+      background-color: white;
+  
+      color: black;
+    }
+  }
